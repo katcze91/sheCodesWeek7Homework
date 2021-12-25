@@ -1,0 +1,101 @@
+body {
+  background-image: url(../image/cloudsBack.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  opacity: 85%;
+}
+
+h1 {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 80px;
+}
+h2 {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 40px;
+}
+ul {
+  list-style-type: none;
+  font-family: "Tenor Sans", sans-serif;
+}
+h3 {
+  font-size: 80px;
+  font-family: "Tenor Sans", sans-serif;
+}
+h5 {
+  font-family: "Tenor Sans", sans-serif;
+  font-style: italic;
+}
+
+footer {
+  position: relative;
+  font-family: "Tenor Sans", sans-serif;
+  font-size: small;
+  bottom: -80px;
+  left: 700px;
+}
+.card {
+  padding-top: 20px;
+  margin-bottom: 50px;
+  margin: 0 auto;
+  display: block;
+
+  border-radius: 20px;
+}
+.searchButton {
+  background: #5585b5;
+  color: #f8f8f8;
+  border: none;
+  text-align: center;
+  border: 10px;
+  padding: 15px 50px;
+  border-radius: 10px;
+  margin-left: 80px;
+  margin-top: 20px;
+
+  font-family: "Tenor Sans", sans-serif;
+}
+
+#weather {
+  position: relative;
+  margin-left: 200px;
+  list-style-type: none;
+  margin-top: -140px;
+  font-size: 20px;
+  bottom: 200px;
+  left: 160px;
+}
+#currentWeather::first-letter {
+  text-transform: capitalize;
+}
+#search-city-input {
+  background: #f8f8f8;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px 50px;
+  margin: 20px;
+}
+#icon {
+  max-width: 5cm;
+  max-height: 5cm;
+}
+#unit {
+  font-size: 30px;
+  position: relative;
+  margin-left: 90px;
+  bottom: 100px;
+}
+
+.active {
+  color: black;
+}
+#celciusUnit,
+#farenheitUnit {
+  text-decoration: none;
+}
+
+#celciusUnit,
+#farenheitUnit:hover {
+  cursor: default;
+}
