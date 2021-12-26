@@ -35,6 +35,7 @@ function displayWeather(response) {
   cityElement.innerHTML = response.data.name;
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+  displayForecast();
 
   document.querySelector("#currentWeather").innerHTML =
     response.data.weather[0].description;
@@ -73,6 +74,28 @@ function handleSubmit(event) {
 }
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+//display forecast
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` 
+       
+          <div class="col">
+            <div class="weatherDate">${day}  <img src="https://cdn.iconscout.com/icon/free/png-256/weather-2191838-1846632.png" alt="weather">
+             <span class="weatherMin">temperature <span class="weatherMax"></span> 
+            </div>
+          </div>
+         
+        
+`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 //Farenheit conversion
 function showFarenheit(event) {
@@ -91,6 +114,7 @@ function showCelcius(event) {
   celciusLink.classList.add("active");
   farenheitLink.classList.remove("active");
 }
+
 let celciusTemperature = null;
 
 let farenheitLink = document.querySelector("#farenheitUnit");

@@ -31,7 +31,7 @@ h5 {
 footer {
   position: relative;
   font-family: "Tenor Sans", sans-serif;
-  font-size: small;
+  font-size: 15px;
   bottom: -80px;
   left: 700px;
 }
@@ -56,7 +56,14 @@ footer {
 
   font-family: "Tenor Sans", sans-serif;
 }
-
+.col {
+  border: solid;
+  border-color: black;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 2px;
+  text-align: center;
+}
 #weather {
   position: relative;
   margin-left: 200px;
