@@ -19,7 +19,7 @@ h5 {
   font-family: "Tenor Sans", sans-serif;
   font-style: italic;
 }
-
+hr {padding-top: 0px;}
 footer {
   position: relative;
   font-family: "Tenor Sans", sans-serif;
@@ -36,8 +36,8 @@ footer {
   margin: 60px auto;
   display: block;
   border-radius: 35px;
-  width: 700px;
-  height: 900px;
+  width: 800px;
+  height: 1+00px;
 }
 .searchButton {
   background: #5585b5;
@@ -47,7 +47,7 @@ footer {
   border: 10px;
   padding: 18px 50px;
   border-radius: 10px;
-  margin-left: 250px;
+  margin-left: 200px;
   margin-top: 20px;
   font-family: "Tenor Sans", sans-serif;
   font-weight: bolder;
@@ -60,6 +60,7 @@ footer {
   padding: 2px;
   text-align: center;
 }
+
 
 .weatherDate {
   text-align: center;
@@ -113,7 +114,7 @@ footer {
   margin-right: 20px;
   list-style-type: none;
   margin-top: -160px;
-
+  
   bottom: 100px;
   left: 400px;
 }
