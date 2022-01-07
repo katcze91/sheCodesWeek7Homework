@@ -19,7 +19,9 @@ h5 {
   font-family: "Tenor Sans", sans-serif;
   font-style: italic;
 }
-hr {padding-top: 0px;}
+hr {
+  padding-top: 0px;
+}
 footer {
   position: relative;
   font-family: "Tenor Sans", sans-serif;
@@ -36,8 +38,9 @@ footer {
   margin: 60px auto;
   display: block;
   border-radius: 35px;
-  width: 800px;
-  height: 1+00px;
+  height: 870px;
+  width: 60rem;
+  opacity: 85%;
 }
 .searchButton {
   background: #5585b5;
@@ -45,7 +48,7 @@ footer {
   border: none;
   text-align: center;
   border: 10px;
-  padding: 18px 50px;
+  padding: 18px 30px;
   border-radius: 10px;
   margin-left: 200px;
   margin-top: 20px;
@@ -60,7 +63,6 @@ footer {
   padding: 2px;
   text-align: center;
 }
-
 
 .weatherDate {
   text-align: center;
@@ -81,7 +83,7 @@ footer {
   background: #f8f8f8;
   text-align: center;
   border-radius: 10px;
-  padding: 18px 90px;
+  padding: 18px 70px;
   margin: 20px;
 }
 #current-location-button {
@@ -114,7 +116,7 @@ footer {
   margin-right: 20px;
   list-style-type: none;
   margin-top: -160px;
-  
+
   bottom: 100px;
   left: 400px;
 }
