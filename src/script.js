@@ -100,16 +100,18 @@ function displayForecast(response) {
         ` 
        
           <div class="col">
-            <div class="weatherDate">${formatDay(
-              forecastDay.dt
-            )}  <img src="http://openweathermap.org/img/wn/${
-          forecastDay.weather[0].icon
-        }@2x.png" alt="weather">
-             <span class="weatherMin"> ${Math.round(
-               forecastDay.temp.min
-             )} ° / <span class="weatherMax"> ${Math.round(
-          forecastDay.temp.max
-        )} °</span> 
+            <div class="weatherDate">${formatDay(forecastDay.dt)}  
+            <hr>
+          <img src="http://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png" alt="weather">
+          <div class="temperature">
+         <span class="weatherMax"> ${Math.round(forecastDay.temp.max)} 
+           ° / </span> <span class="weatherMin"> ${Math.round(
+             forecastDay.temp.min
+           )} ° 
+            </span> 
+            </div>
             </div>
           </div>
          
@@ -121,6 +123,19 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getLocation(position) {
+  let apiKey = "c49eff189373b6b9c4fea0abf89e5033";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
 
+  axios.get(apiUrl).then(displayWeather);
+}
+
+function getPosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(getLocation);
+}
+
+let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getPosition);
 
 search("Stockholm");

@@ -1,27 +1,18 @@
-body {
-  background-image: url(../image/cloudsBack.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  margin-top: 100px;
-  opacity: 85%;
-}
-
 h1 {
   font-family: "Tenor Sans", sans-serif;
   font-weight: bolder;
-  font-size: 80px;
+  font-size: 60px;
 }
 h2 {
   font-family: "Tenor Sans", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
 }
 ul {
   list-style-type: none;
   font-family: "Tenor Sans", sans-serif;
 }
 h3 {
-  font-size: 80px;
+  font-size: 60px;
   font-family: "Tenor Sans", sans-serif;
 }
 h5 {
@@ -33,16 +24,19 @@ footer {
   position: relative;
   font-family: "Tenor Sans", sans-serif;
   font-size: 15px;
-  bottom: -80px;
-  left: 700px;
-}
-.card {
-  padding-top: 20px;
-  margin-bottom: 50px;
-  margin: 0 auto;
-  display: block;
-
+  bottom: -40px;
+  background: cornsilk;
+  padding-right: inherit;
   border-radius: 20px;
+ 
+}
+
+.card {
+  position: relative;
+  padding-top: 20px;
+  margin: 60px auto;
+  display: block;
+  border-radius: 35px;
 }
 .searchButton {
   background: #5585b5;
@@ -50,12 +44,12 @@ footer {
   border: none;
   text-align: center;
   border: 10px;
-  padding: 15px 50px;
+  padding: 18px 50px;
   border-radius: 10px;
-  margin-left: 80px;
+  margin-left: 200px;
   margin-top: 20px;
-
   font-family: "Tenor Sans", sans-serif;
+  font-weight: bolder;
 }
 .col {
   border: solid;
@@ -65,25 +59,66 @@ footer {
   padding: 2px;
   text-align: center;
 }
-#weather {
-  position: relative;
-  margin-left: 200px;
-  list-style-type: none;
-  margin-top: -140px;
+.weatherDate {
+  text-align: center;
+  margin-top: 10px;
   font-size: 20px;
-  bottom: 200px;
-  left: 160px;
+  font-family: "Tenor Sans", sans-serif;
 }
-#currentWeather::first-letter {
-  text-transform: capitalize;
+#cloudVideo {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 #search-city-input {
   background: #f8f8f8;
   text-align: center;
   border-radius: 10px;
-  padding: 15px 50px;
+  padding: 18px 90px;
   margin: 20px;
 }
+#current-location-button {
+  background: #89abcc;
+  color: #f8f8f8;
+  border: none;
+  text-align: center;
+  border: 10px;
+  padding: 12px 30px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: bolder;
+}
+#conditions {
+  text-align: center;
+  text-orientation: upright;
+  position: relative;
+  transform: translateY(40%);
+ 
+}
+#weather {
+  background: #e3f6f5; 
+  border-radius: 50%;
+  width: 350px;
+  height:250px;
+  position: relative;
+  margin-right: 70px;
+  list-style-type: none;
+  margin-top: -140px;
+  font-size: 20px;
+  bottom: 100px;
+  left: 400px;
+}
+#currentWeather::first-letter {
+  text-transform: capitalize;
+}
+
 #icon {
   max-width: 5cm;
   max-height: 5cm;
@@ -91,19 +126,9 @@ footer {
 #unit {
   font-size: 30px;
   position: relative;
-  margin-left: 90px;
-  bottom: 100px;
+  margin-left: 80px;
+  bottom: 80px;
 }
-
-.active {
-  color: black;
-}
-#celciusUnit,
-#farenheitUnit {
-  text-decoration: none;
-}
-
-#celciusUnit,
-#farenheitUnit:hover {
-  cursor: default;
+#temperature {
+  margin-left: 20px;
 }
