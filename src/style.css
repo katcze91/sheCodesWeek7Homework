@@ -1,34 +1,33 @@
 h1 {
   font-family: "Tenor Sans", sans-serif;
   font-weight: bolder;
-  font-size: 60px;
+  font-size: 30px;
 }
 h2 {
   font-family: "Tenor Sans", sans-serif;
-  font-size: 30px;
+  font-size: 15px;
 }
 ul {
   list-style-type: none;
   font-family: "Tenor Sans", sans-serif;
 }
 h3 {
-  font-size: 60px;
+  font-size: 30px;
   font-family: "Tenor Sans", sans-serif;
 }
 h5 {
   font-family: "Tenor Sans", sans-serif;
   font-style: italic;
 }
-
+hr {padding-top: 0px;}
 footer {
   position: relative;
   font-family: "Tenor Sans", sans-serif;
-  font-size: 15px;
+  font-size: 10px;
   bottom: -40px;
   background: cornsilk;
   padding-right: inherit;
   border-radius: 20px;
- 
 }
 
 .card {
@@ -37,6 +36,8 @@ footer {
   margin: 60px auto;
   display: block;
   border-radius: 35px;
+  width: 800px;
+  height: 1+00px;
 }
 .searchButton {
   background: #5585b5;
@@ -59,6 +60,8 @@ footer {
   padding: 2px;
   text-align: center;
 }
+
+
 .weatherDate {
   text-align: center;
   margin-top: 10px;
@@ -97,21 +100,21 @@ footer {
 }
 #conditions {
   text-align: center;
-  text-orientation: upright;
   position: relative;
-  transform: translateY(40%);
- 
+  transform: translateY(80%);
+  right: 15px;
+  font-size: 12px;
 }
 #weather {
-  background: #e3f6f5; 
+  background: #e3f6f5;
   border-radius: 50%;
-  width: 350px;
-  height:250px;
+  width: 200px;
+  height: 200px;
   position: relative;
-  margin-right: 70px;
+  margin-right: 20px;
   list-style-type: none;
-  margin-top: -140px;
-  font-size: 20px;
+  margin-top: -160px;
+  
   bottom: 100px;
   left: 400px;
 }
@@ -124,11 +127,12 @@ footer {
   max-height: 5cm;
 }
 #unit {
-  font-size: 30px;
+  font-size: 20px;
   position: relative;
-  margin-left: 80px;
-  bottom: 80px;
+  margin-left: 50px;
+  bottom: 47px;
 }
 #temperature {
   margin-left: 20px;
+  margin-top: -3px;
 }
